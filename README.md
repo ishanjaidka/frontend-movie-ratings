@@ -21,7 +21,7 @@
 ### Run this project
 - Clone Python API from another project 
 - Clone this project
-- Make sure Python API is running on localhost or port as wanted
+- Make sure Python API is running on localhost or any ip as wanted
 - Copy the Python API URL and paste in the environment file in the APIEndpoint in this project
 - Run npm install for installing all the required packages
 - Run this project using npm start
