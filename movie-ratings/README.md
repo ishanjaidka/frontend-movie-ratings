@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### Table of contents
+<!-- toc -->
+- [Read it first](#rif)
+- [Run this project](#rtp)
+- [Functionalities in the project](#fitp)
+- [Assumptions](#assump)
 
-## Available Scripts
+<!-- tocstop -->
 
-In the project directory, you can run:
 
-### `npm start`
+--
+<a name="rif" />
+## Read it first
+- This is a React project
+- This project is a Front End for giving ratings for movies which is stored in the database
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+--
+<a name="rtp" />
+### Run this project
+- Clone Python API from another project 
+- Clone this project
+- Make sure Python API is running on localhost or any ip as wanted
+- Copy the Python API URL and paste in the environment file in the APIEndpoint in this project
+- Run npm install for installing all the required packages
+- Run this project using npm start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+--
+<a name="fitp" />
+### Functionalities in the project
+- Landing page will have all the movies listed with Overall Ratings for each movie
+- User can click on Show Details of a particula moive to check which provider/user has rated that movie
+- Search functionality works with movie and provider field not empty and a snackbar with provider's/user's score for that movie will be visible for 5 seconds
+- User will be able to see the only movie listed when searched and if found in the database with only provider's/user's rating as overall rating
+- Reset button next to search button will take user to the landing page when there is one movie listed on the page because of search
+- Submit score will open up a form for provider/user to submit a rating for movie
+- If provider/user already has a rating submitted for a particular movie, the snackbar will show a message that 'Ratings for provider already exists!'
+- If a movie's rating is added and successfully saved in the database user will be shown a snackbad with a message that 'Movie with ratings added!' and movies list will be automatically refreshed.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+--
+<a name="assump" />
+### Assumptions
+- Node and npm is installed
+- API is running on backend in (Python)
